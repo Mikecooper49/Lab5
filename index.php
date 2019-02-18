@@ -93,10 +93,42 @@ $provisionedActivities[1] = "hugs";
         }
         else print " <p> Day. $i . No products are available</p>";
     }
+
 */
-    $provisionedActivities = array("specs", "mugs", "sausage rolls");
 
+    $count0 = 0;
+    $count1 = 0;
+    $count2 = 0;
 
+    for ($i = 1; $i <=31; $i++) {
+        $todayGood = rand(0,2);
+
+            if ($todayGood == 0) {
+                    $count0++;
+                     while ($count0 < 7){
+                    print "<p> On the $i  of the month specs are available</p>";
+                }
+            }
+            else print "No more stuff left in ABZ</p>";
+
+            if ($todayGood == 1) {
+                    $count1++;
+                    while ($count1 < 7){
+                    print "<p> On the $i of the month mugs are available</p>";
+                }
+
+            }
+            else print "No more stuff left in ABZ</p>";
+
+            if ($todayGood == 2) {
+                        $count2++;
+                        while ($count2 < 7){
+                        print "<p> On the $i of the month sausage rolls are available</p>";
+                    }
+
+                }
+            else print "No more stuff left in ABZ</p>";
+    }
 
     ?>
 
