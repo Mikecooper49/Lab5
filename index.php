@@ -78,6 +78,7 @@ $provisionedActivities[1] = "hugs";
     print"<p>---------------------------------------</p>";
 
     */
+/*
     $provisionedActivities = array("specs", "mugs", "sausage rolls");
     for ($i = 1; $i <=31; $i++) {
 
@@ -92,6 +93,10 @@ $provisionedActivities[1] = "hugs";
         }
         else print " <p> Day. $i . No products are available</p>";
     }
+*/
+    $provisionedActivities = array("specs", "mugs", "sausage rolls");
+
+
 
     ?>
 
