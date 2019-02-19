@@ -104,31 +104,31 @@ $provisionedActivities[1] = "hugs";
         $todayGood = rand(0,2);
 
             if ($todayGood == 0) {
-                    $count0++;
-                     while ($count0 < 7){
-                    print "<p> On the $i  of the month specs are available</p>";
+                $count0++;
+                if ($count0 < 8) {
+                    print "<p> On the $i  of the month specs $count0 are available</p>";
                 }
             }
-            else print "No more stuff left in ABZ</p>";
 
-            if ($todayGood == 1) {
+            elseif ($todayGood == 1) {
                     $count1++;
-                    while ($count1 < 7){
-                    print "<p> On the $i of the month mugs are available</p>";
+                    if ($count1 < 8){
+                    print "<p> On the $i of the month mugs $count1 are available</p>";
                 }
 
             }
-            else print "No more stuff left in ABZ</p>";
 
-            if ($todayGood == 2) {
+            elseif ($todayGood == 2) {
                         $count2++;
-                        while ($count2 < 7){
-                        print "<p> On the $i of the month sausage rolls are available</p>";
+                        if ($count2 < 8){
+                        print "<p> On the $i of the month sausage rolls $count2 are available</p>";
                     }
 
                 }
-            else print "No more stuff left in ABZ</p>";
+
     }
+
+    print "<p>No more stuff left in ABZ</p>";
 
     ?>
 
