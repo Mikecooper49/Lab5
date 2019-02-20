@@ -96,6 +96,7 @@ $provisionedActivities[1] = "hugs";
 
 */
 
+/*
     $count0 = 0;
     $count1 = 0;
     $count2 = 0;
@@ -129,6 +130,28 @@ $provisionedActivities[1] = "hugs";
     }
 
     print "<p>No more stuff left in ABZ</p>";
+
+*/
+    $provisionedActivities = array("specs", "mugs", "sausage rolls");
+$names = array("Nick", "Mike", "Alice", "Pauline", "Al", "Steve", "Ken", "Juan", "R2", "Jim");
+sort($names);
+$namesize = 10;
+
+
+for ($i = 0; $i <= 2; $i++){
+
+    $pointer = rand(0, ($namesize-1));
+
+$winner = $names[$pointer];
+$winnerupr = strtoupper($winner);
+print "<p> The winner is $winnerupr  and they have won ALL of $provisionedActivities[$i]</p>";
+unset($names[$pointer]);
+--$namesize;
+
+
+}
+
+print "<p>Finished</p>";
 
     ?>
 
